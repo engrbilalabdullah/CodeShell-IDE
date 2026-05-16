@@ -9,9 +9,7 @@
 #include <vector>
 #include <algorithm>
 
-// ==========================================
-// OS CONCEPT: PROCESS CREATION & IPC PIPES
-// ==========================================
+
 std::string executeOSCommand(std::string cmd) {
     HANDLE hRead, hWrite;
     SECURITY_ATTRIBUTES sa = { sizeof(SECURITY_ATTRIBUTES), NULL, TRUE };
@@ -74,9 +72,7 @@ int main() {
         if (!font.openFromFile("C:\\Windows\\Fonts\\arial.ttf")) return -1;
     }
 
-    // ==========================================
-    // VIRTUAL FILE SYSTEM
-    // ==========================================
+ 
     std::map<std::string, std::string> files;
     files["main.cpp"] = "// Premium C++ Code Layout\n// Try Ctrl+A to select all text!\n// Scroll, Drag splitters, or click inside terminal to clear.\n\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"CodeShell Premium Build Active!\" << endl;\n    return 0;\n}";
     files["script.py"] = "# python\n# Python Subsystem\nprint(\"Dynamic Dashboard Working Fine.\")";
@@ -106,9 +102,7 @@ int main() {
     cursor.setFillColor(sf::Color(255, 200, 0)); // Sleek amber-gold cursor
     sf::Clock blinkClock;
 
-    // ==========================================
-    // MAIN LOOP
-    // ==========================================
+   
     while (window.isOpen()) {
         W = static_cast<float>(window.getSize().x);
         H = static_cast<float>(window.getSize().y);
@@ -281,9 +275,6 @@ int main() {
             }
         }
 
-        // ==========================================
-        // RENDER FRAME CONTEXTS
-        // ==========================================
         window.clear();
 
         window.draw(toolbarBg); window.draw(sidebarBg); window.draw(gutterBg); window.draw(editorBg); window.draw(terminalBg);
