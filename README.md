@@ -1,4 +1,4 @@
-# CodeShell-IDE
+# NexusShell IDE
 
 
 A high-performance, single-file custom Integrated Development Environment (IDE) built from scratch using **C++ (SFML 3)** for the GUI dashboard and **Windows API** for low-level operating system operations. 
